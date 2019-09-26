@@ -26,18 +26,18 @@ export default {
         }
     },
     methods: {
-    addTodo(){
-            if(this.newTodoItem !== "" ){
-                var value = this.newTodoItem && this.newTodoItem.trim();
-                this.$emit('addTodo', value);
-                this.clearInput();
-            } else {
-                this.showModal = !thos.showModal;
-            }
-      },
-      clearInput(){
-          this.newTodoItem = '';
-      }
+        addTodo(){
+                if(this.newTodoItem !== "" ){
+                    var value = this.newTodoItem && this.newTodoItem.trim();
+                    this.$emit('addTodo', value);
+                    this.clearInput();
+                } else {
+                    this.showModal = !thos.showModal;
+                }
+        },
+        clearInput(){
+            this.newTodoItem = '';
+        }
     },
     components: {
         Modal: Modal
