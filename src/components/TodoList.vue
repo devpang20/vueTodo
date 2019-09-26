@@ -14,6 +14,7 @@
 
 <script>
 export default {
+    props: ['propsdata'],
      mothods: {
         removeTodo(todoItem,index){
             localStorage.removeItem(todoItem);
